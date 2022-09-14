@@ -21,4 +21,4 @@ Kemudian, pada nomor 2, akan melakukan routing untuk melakukan pemetaan fungsi d
 
 Pada nomor 3, untuk memetakan data ke dalam HTML, maka pada katalog.html mengisi data dengan menggunakan curly bracket untuk dapat menampilkan isi dari template.
 
-Terakhir pada nomor 4, pada website Herokuapp membuat sebuah nama aplikasi baru serta menyalin API-KEY, untuk digunakan pada secrets di repositori github tugas 2, sehingga saat aplikasi di run pada actions github akan sukses dan isi dari aplikasi Herokuapp dapat terlihat.
+Terakhir pada nomor 4, pada website Herokuapp membuat sebuah nama aplikasi baru serta menyalin API-KEY, untuk digunakan pada secrets di repositori github tugas 2 yang sebelumnya sudah dilakukan add, commit, dan push, sehingga saat aplikasi di run pada actions github akan sukses dan isi dari aplikasi Herokuapp dapat terlihat.
