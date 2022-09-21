@@ -1,4 +1,3 @@
-from turtle import done
 from django.shortcuts import render
 from mywatchlist.models import MywatchlistItem
 from django.http import HttpResponse
