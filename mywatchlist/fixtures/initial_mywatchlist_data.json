@@ -3,110 +3,110 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 1,
         "fields": {
-            "watched": "Sudah",
+            "watched": true,
             "title": "When Marnie Was There",
-            "rating": 9,
+            "rating": 4,
             "release_date": "19 Juli 2014",
-            "review": "Mengkisahkan anak pendiam yang suka gambar bertemu dengan Marnie."
+            "review": "Filmnya bagus, salah satu favorit karena bikin nangis."
         }
     },
     {
         "model": "mywatchlist.mywatchlistitem",
         "pk": 2,
         "fields": {
-            "watched": "Sudah",
+            "watched": true,
             "title": "Kiki's Delivery Servcice",
-            "rating": 8,
+            "rating": 3,
             "release_date": "29 July 1989",
-            "review": "Seorang penyihir kecil bernama Kiki yang memulai kehidupan sihirnya dengan menjalankan sebuah misi."
+            "review": "Ya oke lah, soalnya ada kucingnya jadi lucu."
         }
     },
     {
         "model": "mywatchlist.mywatchlistitem",
         "pk": 3,
         "fields": {
-            "watched": "Sudah",
+            "watched": true,
             "title": "Arrietty",
-            "rating": 9,
+            "rating": 4,
             "release_date": "17 Juli 2010",
-            "review": "Kisah Arrietty, seorang kurcaci bertemu dengan Sho, yang punya penyakit jantung."
+            "review": "Keren sih, Arrietty-nya cantik banget tapi ada pembantunya nyebelin."
         }
     },
     {
         "model": "mywatchlist.mywatchlistitem",
         "pk": 4,
         "fields": {
-            "watched": "Sudah",
+            "watched": true,
             "title": "Howl's Moving Castle",
-            "rating": 10,
+            "rating": 5,
             "release_date": "20 November 2004",
-            "review": "Seorang gadis pemilik toko topi bernama Sophie yang bertemu Howl, seorang pria penyihir unggul."
+            "review": "KEREN LAH, salah satu couple terbaik di studio ghibli sih kayanya."
         }
     },
     {
         "model": "mywatchlist.mywatchlistitem",
         "pk": 5,
         "fields": {
-            "watched": "Sudah",
+            "watched": true,
             "title": "Spirited Away",
-            "rating": 8,
+            "rating": 3,
             "release_date": "20 Juli 2001",
-            "review": "Kisah keluarga yang pindah dan anak kecil bernama Chihiro yang mampir pada sebuah pasar yang ditutup tanpa alasan."
+            "review": "Jujur aja serem sama hantunya, aneh-aneh bentukannya. Tapi oke sih."
         }
     },
     {
         "model": "mywatchlist.mywatchlistitem",
         "pk": 6,
         "fields": {
-            "watched": "Sudah",
+            "watched": true,
             "title": "Tales from Earthsea",
-            "rating": 6,
+            "rating": 2,
             "release_date": "29 Juli 2006",
-            "review": "Kisah Pangeran Arren yang secara sadar membunuh ayahnya karena merasa membenci kerajaan dan kabur."
+            "review": "Duh bagus sih, tapi kenapa alurnya gak jelas."
         }
     },
     {
         "model": "mywatchlist.mywatchlistitem",
         "pk": 7,
         "fields": {
-            "watched": "Sudah",
+            "watched": true,
             "title": "From up On Poppy Hill",
-            "rating": 6,
+            "rating": 3,
             "release_date": "16 Juli 2011",
-            "review": "Cerita seorang anak perempuan bernama Meru yang menunggu ayahnya pulang dari berlayar."
+            "review": "So so. Tapi unexpected karena ternyata sodaraan."
         }
     },
     {
         "model": "mywatchlist.mywatchlistitem",
         "pk": 8,
         "fields": {
-            "watched": "Sudah",
-            "title": "Fall in Love at Fist Kiss",
-            "rating": 9,
-            "release_date": "14 Februari 2019",
-            "review": "Kisah Xiangqin, gadis miskin dan bodoh yang jatuh cinta pertama kali pada Jiang Zhishu, pria kaya dan jenius."
+            "watched": false,
+            "title": "Whisper of the Heart",
+            "rating": 0,
+            "release_date": "July 15, 1995",
+            "review": "PENGEN NONTON, ngeliat covernya kayanya couple-nya lucu."
         }
     },
     {
         "model": "mywatchlist.mywatchlistitem",
         "pk": 9,
         "fields": {
-            "watched": "Sudah",
-            "title": "Door Lock",
-            "rating": 8,
-            "release_date": "5 Desember 2018",
-            "review": "Kisah wanita karyawan bernama Kyung-Min yang hidup di apartemen dan memiliki penguntit."
+            "watched": false,
+            "title": "My Neighbor Totoro",
+            "rating": 0,
+            "release_date": "16 April 1988",
+            "review": "Mau nonton sih, tapi belum mood liat characternya."
         }
     },
     {
         "model": "mywatchlist.mywatchlistitem",
         "pk": 10,
         "fields": {
-            "watched": "Belum",
+            "watched": false,
             "title": "The Wind Rises",
             "rating": 0,
             "release_date": "20 Juli 2013",
-            "review": "Salah satu list film yang ingin ditonton nanti."
+            "review": "Mau nonton karena ada salah satu couple lucu dari studio ghibli."
         }
     }
 
