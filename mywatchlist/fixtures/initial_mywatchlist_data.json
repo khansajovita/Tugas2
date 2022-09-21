@@ -3,7 +3,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 1,
         "fields": {
-            "watched": true,
+            "watched": "true",
             "title": "When Marnie Was There",
             "rating": 4,
             "release_date": "19 Juli 2014",
@@ -14,7 +14,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 2,
         "fields": {
-            "watched": true,
+            "watched": "true",
             "title": "Kiki's Delivery Servcice",
             "rating": 3,
             "release_date": "29 July 1989",
@@ -25,7 +25,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 3,
         "fields": {
-            "watched": true,
+            "watched": "true",
             "title": "Arrietty",
             "rating": 4,
             "release_date": "17 Juli 2010",
@@ -36,7 +36,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 4,
         "fields": {
-            "watched": true,
+            "watched": "true",
             "title": "Howl's Moving Castle",
             "rating": 5,
             "release_date": "20 November 2004",
@@ -47,7 +47,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 5,
         "fields": {
-            "watched": true,
+            "watched": "true",
             "title": "Spirited Away",
             "rating": 3,
             "release_date": "20 Juli 2001",
@@ -58,7 +58,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 6,
         "fields": {
-            "watched": true,
+            "watched": "true",
             "title": "Tales from Earthsea",
             "rating": 2,
             "release_date": "29 Juli 2006",
@@ -69,7 +69,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 7,
         "fields": {
-            "watched": true,
+            "watched": "true",
             "title": "From up On Poppy Hill",
             "rating": 3,
             "release_date": "16 Juli 2011",
@@ -80,7 +80,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 8,
         "fields": {
-            "watched": false,
+            "watched": "false",
             "title": "Whisper of the Heart",
             "rating": 0,
             "release_date": "July 15, 1995",
@@ -91,7 +91,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 9,
         "fields": {
-            "watched": false,
+            "watched": "false",
             "title": "My Neighbor Totoro",
             "rating": 0,
             "release_date": "16 April 1988",
@@ -102,7 +102,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 10,
         "fields": {
-            "watched": false,
+            "watched": "false",
             "title": "The Wind Rises",
             "rating": 0,
             "release_date": "20 Juli 2013",
