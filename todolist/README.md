@@ -2,7 +2,7 @@
 ### NPM        : 2106651686
 ### Kelas      : PBP - D
 ### Asdos      : FAR
-### Link Herokuapp : 
+### Link Herokuapp : https://tugas2-khansajovita.herokuapp.com/todolist/
 
 ## 1. Apa kegunaan `{% csrf_token %}` pada elemen `<form>`? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen `<form>`?
 Kegunaan `{% csrf_token %}` sendiri adalah untuk mencegah serangat CSRF atau _Cross-Site Request Forgery_ yang merupakan serangan sederhana pada _web_. 
