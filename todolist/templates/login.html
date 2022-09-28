@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+<title>Login</title>
+{% block meta %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styleforlogin.css' %}">
+{% endblock meta %}
+
+
+{% block content %}
+<body>
+    <h1>Login</h1>
+    <div>    
+        <form method="POST" action="">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td id="font">Username: </td>
+                    <td><input id="corner1" type="text" name="username" placeholder="Username" class="form-control"></td>
+                </tr>
+                        
+                <tr>
+                    <td id="font">Password: </td>
+                    <td><input id="corner1" type="password" name="password" placeholder="Password" class="form-control"></td>
+                </tr>
+    
+                <tr>
+                    <td></td>
+                    <td><br><input id="corner2" class="btn login_btn" type="submit" value="Login"></br></td>
+                </tr>
+            </table>
+        </form>
+    
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}   
+    
+        <br></br>
+        <p id="font">Belum mempunyai akun? <a style="color:red" href="{% url 'todolist:register' %}">Buat Akun</a></p>
+    </div>
+</body>
+
+<img id="img" src="{% static 'johnnysuh.jpg' %}" alt="johnnysuh">
+
+{% endblock content %}

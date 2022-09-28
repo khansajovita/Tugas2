@@ -1,0 +1,29 @@
+body {
+    background-image: url('background.jpg');
+    background-size: 100%;
+}
+
+div {
+    background-color: rgb(252, 255, 178);
+    text-align: center;
+    padding: 10px 20px;
+    font-family: Courier;
+    font-weight: bold;
+    margin: 50px;
+}
+
+input {
+    border-radius: 25px;
+    margin: 5px;
+    padding: 5px;
+    font-family: Courier New;
+}
+
+h1 {
+    font-family: Courier;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+    background-color: #C7F2A4;
+    margin: 50px;
+}

@@ -1,0 +1,29 @@
+body {
+    background-color: #C3F8FF;
+}
+
+div {
+    font-family: Courier;
+    font-weight: bold;
+}
+
+input {
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    font-family: Courier New;
+}
+
+#img {
+    width: 20%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: Courier;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #AAC4FF ;
+    padding: 10px;
+    margin: 20px 100px;
+}

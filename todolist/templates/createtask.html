@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styleforcreate.css' %}">
+{% endblock meta %}
+
+<title>Add Task</title>
+
+{% block content %}
+<body>
+    <h1>Tambah Task</h1>
+    <div>
+        <form method="POST">
+            {% csrf_token %}
+            <table>
+              {{ forms.as_table }}
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Tambah Task"></td>
+                </tr>
+            </table>
+        </form>
+    </div>    
+</body>
+
+{% if messages %}
+<ul>
+    {% for message in messages %}
+        <li>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}   
+
+{% endblock content %}

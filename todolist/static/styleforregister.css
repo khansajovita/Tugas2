@@ -1,0 +1,18 @@
+div {
+    font-family: Courier;
+    margin: 20px;
+    padding: 10px
+}
+
+h1 {
+    font-family: Courier;
+    text-align: center;
+    font-weight: bolder;
+}
+
+input {
+    border-radius: 25px;
+    padding: 5px;
+    margin: 10px;
+    font-family: Courier New;
+}
