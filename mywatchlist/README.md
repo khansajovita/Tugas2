@@ -22,3 +22,11 @@ Data delivery akan berguna untuk mengirimkan data dari satu stack ke stack lainn
 7. Lakukan _routing_ path untuk JSON dan XML. Jika sudah semua dilakukan, maka dapat lakukan `add`, `commit`, `push`. Dan deploy akan secara otomatis akan me-_re-run_ kembali untuk aplikasi pada Herokuapp.
 
 ## Screenshot POSTMAN
+### HTML
+![image](https://github.com/khansajovita/Tugas2/blob/main/mywatchlist/screenshot/Screenshot%20HTML.png)
+
+### JSON
+![image](https://github.com/khansajovita/Tugas2/blob/main/mywatchlist/screenshot/Screenshot%20JSON.png)
+
+### XML
+![image](https://github.com/khansajovita/Tugas2/blob/main/mywatchlist/screenshot/Screenshot%20XML.png)
