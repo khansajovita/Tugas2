@@ -8,7 +8,7 @@
 Kegunaan `{% csrf_token %}` sendiri adalah untuk mencegah serangan CSRF atau _Cross-Site Request Forgery_ yang merupakan serangan sederhana pada _web_, dengan memberikan token acak dengan jumlah yang banyak. Dengan begitu penyerang aplikasi tidak bisa menebak token tersebut dan tidak dapat mengirimkan _request_ ke _web_. CSRF ini terjadi karena tanpa sadar _user_ akan mengirimkan sebuah _request_ ke sebuah aplikasi sehingga nanti aplikasi akan mengeksekusi perintah tersebut. Dan biasanya  dikarenakan _user_ tanpa sengaja telah melakukan klik pada sebuah URL yang mengarahkan ke _web_ yang berbahaya. 
 
 ## 2. Apakah kita dapat membuat elemen `<form>` secara manual (tanpa menggunakan generator seperti `{{ form.as_table }}`)? Jelaskan secara gambaran besar bagaimana cara membuat `<form>` secara manual.
-
+Ya, dapat membuat `<form>` tanpa menggunakan `{{ form.as_table }}`. Karena, kita dapat membuatnya dengan menggunakan tag `<input>` yang berisikan dengan atribut yang disesuaikan dengan kebutuhan, namun biasanya diikuti dengan atribut `type` dan `name`.
 
 ## 3. Jelaskan proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada _database_, hingga munculnya data yang telah disimpan pada _template_ HTML.
 _User_ akan melakukan input pada `form`, yang kemudian di _submit_ dan form akan mengirimkan data tersebut melalui request GET atau POST (tergantung settingan yang dibuatnya). Kemudian server akan memproses dan masuk ke dalam fungsi pada `views.py` lalu inputan disimpan oleh method `.save()`. Barulah data inputan tadi akan berhasil diakses pada _template_ HTML.
