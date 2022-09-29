@@ -29,15 +29,13 @@ def create_task(request):
             obj.description = form['deskripsi'].value()
             obj.date = datetime.datetime.now()
             obj.save()
-            messages.success(request, 'Sudah berhasil ditambahkan')
+            messages.success(request, 'Sudah berhasil ditambahkan!')
             return redirect('todolist:show_todolist')
 
     form = TodoForm()
- 
     page = {
              "forms" : form,
              "list" : list,
-             "title" : "TODO LIST",
            }
     return render(request, 'createtask.html', page)
 
