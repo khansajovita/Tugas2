@@ -18,13 +18,3 @@ input {
     padding: 5px;
     font-family: Courier New;
 }
-
-h1 {
-    font-family: Courier;
-    font-weight: bolder;
-    text-align: center;
-    padding: 10px;
-    background-color: #C7F2A4;
-    margin: 50px 200px;
-    border-radius: 20px;
-}

@@ -12,14 +12,9 @@
     <nav class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid">
             <h5 class="navbar-brand user" style="font-family: Courier; font-weight: bold;">Halo, {{user.get_username}}!</h5>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="{% url 'todolist:create_task' %}">Add Task</a>
-                    <a class="nav-link active" aria-current="page" href="{% url 'todolist:logout' %}">Logout</a>    
-                </div>
+            <div class="nav navbar-nav navbar-right">
+                <a class="nav-link active" aria-current="page" href="{% url 'todolist:create_task' %}">Add Task</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'todolist:logout' %}">Logout</a>    
             </div>
         </div>
     </nav>
@@ -31,7 +26,7 @@
     <div class="row row-cols-auto justify-content-center">
         {% for i in list %}
         <div class="col">
-            <div class="card" style="width: 18rem;">
+            <div class="card h-100" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title"><b>{{i.title}}</b></h5>
                     <p class="card-text">Date : {{i.date}}</p>
