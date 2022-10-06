@@ -1,10 +1,14 @@
 body {
-    background-color: #C3F8FF;
+    background-color: #321911;
 }
 
 div {
     font-family: Courier;
     font-weight: bold;
+    float: left;
+    margin-left: 200px;
+    text-align: center;
+    color: #ffffcf;
 }
 
 input {
@@ -17,13 +21,17 @@ input {
 #img {
     width: 20%;
     background-repeat: no-repeat;
+    float: right;
+    margin-right: 200px;
 }
 
 h1 {
     font-family: Courier;
     font-weight: bolder;
     text-align: center;
-    background-color: #AAC4FF ;
     padding: 10px;
-    margin: 20px 100px;
+    margin: 50px 200px;
+    border-radius: 20px;
+    color: #8b6b61;
+    background-color: #ffffcf;
 }

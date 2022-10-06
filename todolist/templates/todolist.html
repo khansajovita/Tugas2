@@ -2,60 +2,66 @@
 
 {% block meta %}
 {% load static %}
-<link rel="stylesheet" href="{% static 'stylefortodo.css' %}">
+<link rel="stylesheet" href="{% static 'todolist.css' %}">
 {% endblock meta %}
 
 {% block content %}
 
+
 <body>
-  <h1>Your To Do List</h1>
-  <h3>Name: {{ user.get_username }} </h3>
-  
-  <button id="corner1"><a href="{% url 'todolist:create_task' %}">Add Task</a></button>
-  <button id="corner1"><a href="{% url 'todolist:logout' %}">Logout</a></button>
-  
-  <br></br>
-  
-  <div class="login">
-    <table>
-      <tr>
-        <th>Date</th>
-        <th>Title</th>
-        <th>Description</th>
-        <th>Status</th>
-        <th></th>
-        <th>Delete</th>
-      </tr>
-      {% for i in list %}
-      <tr>
-          <th>{{i.date}}</th>
-          <th>{{i.title}}</th>
-          <th>{{i.description}}</th>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <h5 class="navbar-brand user" style="font-family: Courier; font-weight: bold;">Halo, {{user.get_username}}!</h5>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="{% url 'todolist:create_task' %}">Add Task</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'todolist:logout' %}">Logout</a>    
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <br>
 
-          {% if i.is_finished == True %}
-            <th>Selesai</th>
-          {% else %}
-            <th>Belum Selesai</th>
-          {% endif %}
-
-          <th>
-            <form method="POST" action="change-status">
-                {% csrf_token %}
-                <input type="submit" name="{{i.id}}" value="change">
-            </form>
-          </th>
-
-          <th>
-            <form method="POST" action="delete">
-                {% csrf_token %}
-                <input type="submit" name="{{i.id}}" value="delete">
-            </form>
-          </th>
-
-      </tr>
-    {% endfor %}
-    </table>
-  </div>  
+    <h1>Your To Do List</h1>
+    <br>
+    <div class="row row-cols-auto justify-content-center">
+        {% for i in list %}
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>{{i.title}}</b></h5>
+                    <p class="card-text">Date : {{i.date}}</p>
+                    <p class="card-text">Description : {{i.description}}</p>
+                    
+                    {% if i.is_finished == True %}
+                        <p class="card-text">Status : Selesai</p>
+                    {% else %}
+                        <p class="card-text">Status : Belum Selesai</p>
+                    {% endif %}
+                    
+                    <table>
+                        <th>
+                            <form method="POST" action="change-status">
+                                {% csrf_token %}
+                                <input class="btn btn-primary" type="submit" name="{{i.id}}" value="change">
+                            </form>    
+                        </th>
+                        <th>
+                            <form method="POST" action="delete">
+                                {% csrf_token %}
+                                <input class="btn btn-primary" type="submit" name="{{i.id}}" value="delete">
+                            </form>    
+                        </th>
+                    </table>
+                </div>
+            </div>        
+        </div>
+        {% endfor %}  
+    </div>
+    <br>
 </body>
-
 {% endblock content %}

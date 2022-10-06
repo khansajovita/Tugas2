@@ -1,0 +1,33 @@
+body {
+    background-image: url('howls.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+div {
+    background-color: #fff7ff;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: Courier;
+    font-weight: bold;
+    margin: 50px;
+    border-radius: 30px;
+}
+
+input {
+    border-radius: 25px;
+    margin: 5px;
+    padding: 5px;
+    font-family: Courier New;
+}
+
+h1 {
+    font-family: Courier;
+    font-weight: bolder;
+    text-align: center;
+    padding: 30px;
+    background-color: #d1c4e9;
+    margin: 20px 100px;
+    border-radius: 20px;
+}

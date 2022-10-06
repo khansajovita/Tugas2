@@ -1,0 +1,25 @@
+html body {
+    background-color: #b2dfdb;
+    overflow-x: hidden;
+}
+
+div.card {
+    background-color: #ffff;
+    color: #75a478;
+    font-family: Courier;
+}
+
+h1 {
+    text-align: center;
+    color: #75a478;
+    font-family: Courier;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #e66f64;
+    border: none;
+    display: block;
+    color: black;
+    font-family: Courier;
+}

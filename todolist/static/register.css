@@ -1,15 +1,15 @@
 body {
-    background-image: url('background.jpg');
+    background-image: url('studioghibli.jpg');
     background-size: 100%;
 }
 
 div {
     background-color: rgb(252, 255, 178);
-    text-align: center;
     padding: 10px 20px;
     font-family: Courier;
     font-weight: bold;
     margin: 50px;
+    border-radius: 20px;
 }
 
 input {
@@ -25,5 +25,6 @@ h1 {
     text-align: center;
     padding: 10px;
     background-color: #C7F2A4;
-    margin: 50px;
+    margin: 50px 200px;
+    border-radius: 20px;
 }
