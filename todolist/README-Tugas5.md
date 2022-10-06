@@ -7,9 +7,15 @@
 ## 1. Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?
 Inline merupakan kode CSS yang diletakkan pada setiap tag HTML, sesuai dengan _style_ yang kita inginkan. Internal CSS merupakan kode CSS yang diketik pada `tag<style>` dimana letaknya berada paling atas dari _header file_ HTML. Sedangkan Eksternal CSS merupakan kode CSS yang ditulis secara terpisah dari HTML yang nantinya akan digabungkan antara file `.css` dengan file `.html`. 
 
- | Inline | Internal | Eksternal
-Kelebihan | Dalam kasus perubahan kecil pada satu tag akan lebih mudah, Proses load akan lebih cepat serta memudahkan developer untuk melakukan revisi kode. | Tidak mempengaruhi perubahan pada halaman _website_ lain, tidak membutuhkan banyak file untuk mengetikkan CSS. | Kecepatan _loading_ akan leih cepat, file CSS dapat digunakan oleh banyak file HTML, struktur HTML akan lebih rapi dah memori yang digunakan kecil.
-Kekurangan | Tidak efisien karena harus mengetikkan kalimat yang sama pada setiap tag. | Performa web akan lambat karena membutuhkan memori yang besar, serta tidak efisiem. | Tampilan _website_ akan tidak rapi saat terjadi kegagalan pemanggilan file CSS.
+Kelebihan
+- Inline : Dalam kasus perubahan kecil pada satu tag akan lebih mudah, Proses load akan lebih cepat serta memudahkan developer untuk melakukan revisi kode.
+- Internal : Tidak mempengaruhi perubahan pada halaman _website_ lain, tidak membutuhkan banyak file untuk mengetikkan CSS.
+- Eksternal : Kecepatan _loading_ akan leih cepat, file CSS dapat digunakan oleh banyak file HTML, struktur HTML akan lebih rapi dah memori yang digunakan kecil.
+
+Kekurangan 
+- Inline : Tidak efisien karena harus mengetikkan kalimat yang sama pada setiap tag. 
+- Internal : Performa web akan lambat karena membutuhkan memori yang besar, serta tidak efisiem.
+- Eksternal : Tampilan _website_ akan tidak rapi saat terjadi kegagalan pemanggilan file CSS.
 
 ## 2. Jelaskan tag HTML5 yang kamu ketahui.
 1. `<!DOCTYPE>` = Untuk menentukan tipe dari dokumen;
