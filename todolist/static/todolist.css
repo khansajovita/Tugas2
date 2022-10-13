@@ -22,3 +22,27 @@ h1 {
     color: black;
     font-family: Courier;
 }
+
+.btn-secondary {
+    background-color: #9f9f9f;
+    border: none;
+    color: black;
+    font-family: Courier;
+}
+
+label.modallabel {
+    font-family: Courier;
+    font-weight: bold;
+    text-align: center;
+}
+
+input {
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    font-family: Courier New;
+}
+
+.modal-footer {
+    text-align: center;
+}

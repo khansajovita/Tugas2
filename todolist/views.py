@@ -1,11 +1,13 @@
 import datetime
+from turtle import title
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
+from django.core import serializers
 from todolist.models import Task
 from todolist.forms import TodoForm
 
@@ -17,6 +19,20 @@ def show_todolist(request):
     list = Task.objects.filter(user = request.user)
     context = {'list': list}
     return render(request, "todolist.html", context)
+
+def show_ajax(request):
+    list = Task.objects.filter(user = request.user)
+    return HttpResponse(serializers.serialize("json", list), content_type="application/json")
+
+def todolist_ajax(request):
+    if request.method == 'POST':
+        title = request.POST.get('title')
+        date = datetime.datetime.now()
+        description = request.POST.get('description')
+
+        newItem = Task(title=title, date=date, description=description, user=request.user)
+        newItem.save()
+    return HttpResponseRedirect(reverse('todolist:show_todolist'))
 
 def create_task(request):
     list = Task.objects.order_by("-date")
