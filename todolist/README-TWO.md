@@ -10,7 +10,7 @@ _Programming synchronus_, terjadi blok eksekusi sehingga perintah selanjutnya be
 Event-driven programming memiliki alur program yang ditentukan oleh event seperti melakukan klik pada _button_ yang dilakukan oleh _user_ sehingga memunculkan sebuah hasil atau _output_. Salah satu contohnya adalah pada saat user melakukan klik pada _button create task_.
 
 ## Jelaskan penerapan asynchronous programming pada AJAX.
-
+Asynchronus programming sendiri dapat menjalankan perintah lain selama perintah yang dieksekusi sedang dijalankan, sedangkan dengan adanya AJAX, maka selama _request_ AJAX berlangsung, web dapat dijalankan seperti biasa yang mana _request_ tersebut dijalankan pada latar belakang. Sehingga, dengan AJAX, website tidak perlu melakukan _reload_ dan dapat menampilkan tampilan yang sudah di-_update_ secara langsung. 
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 1. Membuat _function_ pada `views.py` untuk mengambil dan mengembalikan data dalam bentuk json (untuk AJAX GET);
